@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "Sentry": {
+      "url": "https://mcp.sentry.dev/mcp/national-higher-school-of-adva/javascript-nextjs",
+      "type": "http"
+    }
+  }
+}
