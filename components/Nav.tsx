@@ -15,9 +15,9 @@ export default function Nav() {
                     </Image>
                 </div>
             </Link>
-            <div className="flex">
-            <Navitems/>
-            <p>sing in </p>
+            <div className="flex items-center gap-6">
+                <Navitems />
+                <p className="cursor-pointer hover:text-primary">sign in</p>
             </div>
         </nav>
     )
