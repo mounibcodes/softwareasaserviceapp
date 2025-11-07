@@ -3,7 +3,6 @@ import CompanionsList from '@/components/CompanionsList'
 import Cta from '@/components/Cta'
 import { Button } from '@/components/ui/button'
 import { recentSessions } from '@/constants'
-import React from 'react'
 
 
 const Page = () => {
@@ -14,23 +13,23 @@ const Page = () => {
         <CompanionsCard id={123}
           name='Neura the brainy explorer'
           topic='Neural network of the brain'
-          subject='science'
+          subject='SCEINCE'
           duration={40}
           color='#ffda6e' />
         <CompanionsCard id={456}
           name='Data Science is the Future'
           topic='Neural network of the computers'
-          subject='artificial intelegence'
+          subject='CODING'
           duration={50}
           color='#C8A2C8' />
         <CompanionsCard id={789}
           name='Does being alone actually good'
           topic='how does the great comes'
-          subject='sociologie'
+          subject='NOT SET YET'
           duration={20}
           color='#bbda0e' />
-
       </section>
+      
       <section className='home-section'>
         <CompanionsList 
         title='Recently Completed Sessions'  
