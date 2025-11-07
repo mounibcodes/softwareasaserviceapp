@@ -1,9 +1,11 @@
 import Link from "next/link"
 import Image from "next/image"
 import Navitems from "./Navitems"
+import { SignInButton , SignedIn  , SignIn, SignedOut, UserButton } from "@clerk/nextjs"
 
 export default function Nav() {
     return (
+
         <nav className="navbar">
             <Link href='/'>
                 <div className="flex items-center gap-2.5 cursor-pointer">
@@ -17,7 +19,14 @@ export default function Nav() {
             </Link>
             <div className="flex items-center gap-6">
                 <Navitems />
-                <p className="cursor-pointer hover:text-primary">sign in</p>
+                <SignedOut>
+                        <SignInButton>
+                            <button className="btn-signin">Sign In</button>
+                        </SignInButton>
+                </SignedOut>
+                <SignedIn>
+                    <UserButton afterSignOutUrl="/" />
+                </SignedIn>
             </div>
         </nav>
     )
